@@ -80,3 +80,4 @@ def myfunc2():
 myfunc2()
 
 print('This variable is ' + t)
+#HOWEVER, YOU CAN CREATE A GLOBAL VARIABLE AND CHANGE A GLOBAL VARIABLE INSIDE A FUNCTION WITH THE global keyword. 
