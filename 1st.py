@@ -47,3 +47,36 @@ j, k, l = fruits
 print(j)
 print(k)
 print(l)
+
+#concat
+m = 'awesome'
+print('python is ' + m)
+
+n = 'python is '
+o = 'awesome'
+p = n + o
+print(p)
+
+#but in python + adds int
+q = 5
+r = 10
+print(q + r)
+
+#global variables are created outside of a function and can be used by everything inside and  outside of functions
+s = 'intersting'
+def myfunc():
+  print('Python is ' + s)
+
+myfunc()
+#varible created inside of functions are only available in the function
+#even if same name for two functions inside and outside of function, the one inside 
+#the function can only be used inside the function and the global variable will remain as it was 
+#with its original value
+t = 'global'
+def myfunc2():
+   t = 'local'
+   print('This variable is ' + t)
+
+myfunc2()
+
+print('This variable is ' + t)
